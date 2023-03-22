@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitter Search App</title>
+  </head>
+  <body>
+    <h1>Twitter Search App</h1>
+    <form action="{{ url_for('tweets') }}" method="POST">
+      <label for="username">Enter Twitter Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="start_date">Enter Start Date (YYYY-MM-DD):</label>
+      <input type="text" id="start_date" name="start_date"><br><br>
+      <label for="end_date">Enter End Date (YYYY-MM-DD):</label>
+      <input type="text" id="end_date" name="end_date"><br><br>
+      <input type="submit" value="tweets">
+    </form>
+  </body>
+</html>
